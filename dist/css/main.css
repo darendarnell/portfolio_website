@@ -298,13 +298,13 @@ img {
     #header-home .main-nav .container ul li,
     #header-inner .main-nav .container ul li {
       padding: 1rem; }
-  #header-home .header-content {
+  #header-home .header-content .container {
     display: flex;
     flex-direction: column-reverse; }
-    #header-home .header-content .container {
-      display: none; }
-    #header-home .header-content .bottom {
+    #header-home .header-content .container .bottom {
       text-align: center; }
+    #header-home .header-content .container .top {
+      display: none; }
   #timeline ul li div {
     width: 200px; }
   .contact-form form {

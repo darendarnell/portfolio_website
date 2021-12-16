@@ -102,13 +102,15 @@
 
   #header-home {
     .header-content {
-      display: flex;
-      flex-direction: column-reverse;
       .container {
-        display: none;
-      }
-      .bottom {
-        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        .bottom {
+          text-align: center;
+        }
+        .top {
+          display: none;
+        }
       }
     }
   }
