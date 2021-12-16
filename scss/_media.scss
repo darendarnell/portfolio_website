@@ -1,0 +1,126 @@
+// Under 900px width
+@media(max-width: 900px) {
+  #header {
+    &-home .main-nav,
+    &-inner .main-nav {
+      .container {
+        display: flex;
+        flex-direction: column-reverse;
+
+        ul {
+          position: static;
+          margin: auto;
+
+          li {
+            padding: 0 3rem;
+            padding-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  #about .container {
+    .about-info {
+      grid-template-columns: 1fr;
+
+      img {
+        display: none;
+      }
+
+      .bio {
+        width: 100%;
+      }
+    }
+  }
+
+  #hobbies {
+    grid-template-columns: 1fr;
+
+    div:nth-child(1),
+    div:nth-child(2) {
+      border-bottom: 1px dotted $medium-color;
+      padding-bottom: 1rem;
+    }
+  }
+}
+@media (max-width: 800px) {
+  #timeline {
+    ul {
+      li {
+        margin: 0;
+        &:nth-child(even) div {
+          left: 40px;
+
+          &:before {
+            left: -15px;
+            border-width: 8px 16px 8px 0;
+            border-color: transparent $dark-color transparent transparent;
+          }
+        }
+      }
+    }
+  }
+  #social-media {
+    
+    .social-links {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 40%;
+      margin: auto;
+
+      div {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  .contact-form {
+    form {
+      width: 70%;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  #header {
+    &-home .main-nav,
+    &-inner .main-nav {
+      .container {
+        ul {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+
+          li {
+            padding: 1rem;
+          }
+        }
+      }
+      
+    }
+  }
+  #timeline {
+    ul {
+      li {
+        div {
+          width: 200px;
+        }
+      }
+    }
+  }
+  .contact-form {
+    form {
+      width: 100%;
+    }
+  }
+  
+  #main-footer {
+    .footer-content {
+      text-align: center;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}

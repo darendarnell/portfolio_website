@@ -1,0 +1,48 @@
+@import 'config';
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.logo {
+  text-align: center;
+  color: $light-color;
+  font-weight: 350;
+  line-height: 1.3;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background-color: $primary-color;
+  display: block;
+  margin: 1rem auto 1rem auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background-color: $dark-color;
+  color: white;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.material-icons { color:$light-color; font-weight: 200; }
+
+.material-icons.md-70 { font-size: 70px; }
