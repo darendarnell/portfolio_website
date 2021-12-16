@@ -222,7 +222,7 @@ img {
       width: 100%;
       text-align: center; }
     .contact-form form .recaptcha {
-      margin: 1rem; }
+      margin: 1rem 0; }
 
 #main-footer {
   background-color: #333;
