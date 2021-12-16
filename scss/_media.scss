@@ -96,8 +96,20 @@
             padding: 1rem;
           }
         }
+      } 
+    }
+  }
+
+  #header-home {
+    .header-content {
+      display: flex;
+      flex-direction: column-reverse;
+      .container {
+        display: none;
       }
-      
+      .bottom {
+        text-align: center;
+      }
     }
   }
   #timeline {
